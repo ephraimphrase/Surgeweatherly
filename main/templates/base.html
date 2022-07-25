@@ -17,10 +17,10 @@
         <div class="row px-0">
             <div class="col-md-8 min-vh-100 search px-0" style="background-image: url('https://www.mapquestapi.com/staticmap/v5/map?key=JmuTeAzzMz5mGmtD46C9HPfLIufVBoVs&center={{lat}},{{long}}&size=600,400@2x');">
                 <div style="background-color: rgba(0,0,0,0.5);" class="min-vh-100 pt-5 container">
-                    <form class="form-floating" action="{% url 'home' %}" method="POST">
+                    <form action="{% url 'home' %}" method="POST">
                         {% csrf_token %}
                         <div class="row gy-3 pt-4">
-                            <div class="col-md-8">
+                            <div class="col-md-8 form-floating">
                                 <input type="text" class="form-control p-3" id="floatingInput" value="{{location}}" placeholder="Enter Location" name='location'>
                                 <label for="floatingInput">Enter Location</label>
                             </div>
