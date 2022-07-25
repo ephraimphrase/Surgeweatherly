@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'gt-walsheim';
+    src: url('../fonts/GTWalsheimPro-CondensedRegular.ttf');
+}
+
+*{
+    font-family: 'gt-walsheim';
+}
+
 .submit{
     background: #061A36;
     color: #fff;
