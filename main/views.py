@@ -26,5 +26,5 @@ def home(request):
     maps = requests.get(url=url1, params=PARAMS1)
 
     title = 'Weatherly'
-    context = {'title':title, 'wind_speed':wind_speed, 'temperature':temperature, 'humidity':humidity, 'pressure':pressure, 'long':long, 'lat':lat}
+    context = {'title':title, 'wind_speed':wind_speed, 'temperature':temperature, 'humidity':humidity, 'pressure':pressure, 'long':long, 'lat':lat, 'location':location}
     return render(request, 'base.html', context)
